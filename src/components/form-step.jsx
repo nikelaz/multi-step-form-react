@@ -7,11 +7,7 @@ const FormStep = ({ children, isHidden }) => {
     event.preventDefault();
     const formData = new FormData(event.target);
     model.submit(Object.fromEntries(formData));
-
-    if (!model.isLastStep()) {
-      model.nextStep();
-      return;
-    }
+    model.nextStep();
   };
 
   return (
