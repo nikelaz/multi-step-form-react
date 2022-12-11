@@ -4,11 +4,11 @@ const LegalAgreements = () => (
   <FormStep>
     <label>
       <input name="gdpr" type="checkbox" required />
-      I agree with GDPR
+      I agree with <a href="#">Cookie Policy</a>
     </label>
     <label>
       <input name="privacyPolicy" type="checkbox" required />
-      I agree with the Privacy Policy
+      I agree with the <a href="#">Privacy Policy</a>
     </label>
   </FormStep>
 );

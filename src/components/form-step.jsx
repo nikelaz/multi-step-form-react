@@ -16,6 +16,7 @@ const FormStep = ({ children }) => {
 
   return (
     <form onSubmit={formSubmit}>
+      <div className="mb-2">Step {model.currentStep + 1} / {model.steps.length}</div>
       { children }
       { !model.isFirstStep() && <button type="button" onClick={model.prevStep}>Previous</button> }
       { <button type="submit">{ !model.isLastStep() ? 'Next' : 'Submit' }</button> }

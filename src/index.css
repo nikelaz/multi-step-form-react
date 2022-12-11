@@ -1,4 +1,38 @@
+/* Typography */
 body {
-  margin: 0;
+  margin: 2em;
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Form Styles */
+form {
+  max-width: 400px;
+  border: 2px solid #e2e2e2;
+  border-radius: 0.3rem;
+  padding: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.1em;
+}
+
+input:not(input[type="checkbox"], input[type="radio"]) {
+  display: block;
+  min-width: -webkit-fill-available;
+  margin-bottom: 1rem;
+}
+
+button {
+  margin: 1rem 1rem 0 0;
+}
+
+/* Utilities */
+.mb-2 {
+  padding-bottom: 1em;
 }

@@ -18,11 +18,11 @@ const MultiStepForm = (props) => {
   }, [setSubmitHandler]);
 
   return (
-    <div>
+    <>
       {steps.map((step, index) => (
         index === currentStep ? <div key={index}>{step}</div> : <div hidden key={index}>{step}</div>
       ))}
-    </div>
+    </>
   );
 };
 
