@@ -1,7 +1,5 @@
-import FormStep from './form-step';
-
 const PersonalInfo = () => (
-  <FormStep>
+  <>
     <label>First Name</label>
     <input name="firstName" type="text" required />
     <label>Last Name</label>
@@ -14,7 +12,7 @@ const PersonalInfo = () => (
     <input name="city" type="text" required />
     <label>Address</label>
     <input name="address" type="text" required />
-  </FormStep>
+  </>
 );
 
 export default PersonalInfo;

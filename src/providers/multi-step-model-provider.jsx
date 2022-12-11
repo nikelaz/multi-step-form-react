@@ -26,15 +26,6 @@ const MultiStepModelProvider = ({ children }) => {
     });
   };
 
-  const pushData = (inputData) => {
-    setData(currentData => {
-      return {
-        ...currentData,
-        ...inputData
-      };
-    }); 
-  };
-
   const submit = (inputData) => {
     const formData = {
       ...data,
@@ -57,7 +48,6 @@ const MultiStepModelProvider = ({ children }) => {
     prevStep,
     nextStep,
     data,
-    pushData,
     setSubmitHandler,
     submit
   };
